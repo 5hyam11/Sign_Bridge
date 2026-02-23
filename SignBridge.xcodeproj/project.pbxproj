@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5261C7D02F4AE96000FFCD7A /* SignBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5261C7D02F4AE96000FFCD7A /* SignBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SignBridge.app; path = "/Users/shyam/Downloads/SignBridge2/build/Debug-iphoneos/SignBridge.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5261C7D22F4AE96000FFCD7A /* SignBridge */ = {
+		5261C7FB2F4D028600FFCD7A /* SignBridge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SignBridge;
 			sourceTree = "<group>";
@@ -32,17 +32,8 @@
 		5261C7C72F4AE96000FFCD7A = {
 			isa = PBXGroup;
 			children = (
-				5261C7D22F4AE96000FFCD7A /* SignBridge */,
-				5261C7D12F4AE96000FFCD7A /* Products */,
+				5261C7FB2F4D028600FFCD7A /* SignBridge */,
 			);
-			sourceTree = "<group>";
-		};
-		5261C7D12F4AE96000FFCD7A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5261C7D02F4AE96000FFCD7A /* SignBridge.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +52,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5261C7D22F4AE96000FFCD7A /* SignBridge */,
+				5261C7FB2F4D028600FFCD7A /* SignBridge */,
 			);
 			name = SignBridge;
 			packageProductDependencies = (
@@ -95,7 +86,7 @@
 			mainGroup = 5261C7C72F4AE96000FFCD7A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5261C7D12F4AE96000FFCD7A /* Products */;
+			productRefGroup = 5261C7C72F4AE96000FFCD7A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
