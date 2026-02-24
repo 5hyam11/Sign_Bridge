@@ -1,27 +1,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var cameraSession = CameraSession()
+
     var body: some View {
         ZStack {
-            // Background
-            Color.black.ignoresSafeArea()
+            // Live camera feed
+            CameraPreviewView(session: cameraSession)
+                .ignoresSafeArea()
 
             VStack(spacing: 24) {
-
                 // Top label
                 Text("SignBridge")
                     .font(.largeTitle.bold())
                     .foregroundStyle(.white)
+                    .padding(.top, 60)
 
-                // Camera placeholder
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.gray.opacity(0.3))
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 400)
-                    .overlay(
-                        Text("Camera will go here")
-                            .foregroundStyle(.white.opacity(0.5))
-                    )
+                Spacer()
 
                 // Gesture token placeholder
                 Text("GESTURE TOKEN")
@@ -36,11 +31,11 @@ struct ContentView: View {
                 Text("Suggested phrase will appear here")
                     .foregroundStyle(.white.opacity(0.6))
                     .font(.body)
-
-                Spacer()
+                    .padding(.bottom, 60)
             }
-            .padding()
         }
+        .onAppear { cameraSession.start() }
+        .onDisappear { cameraSession.stop() }
     }
 }
 
